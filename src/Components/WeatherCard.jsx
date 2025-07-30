@@ -47,7 +47,9 @@ const WeatherCard = ({
     }
   }, [iconString])
 
-  return (
+  return (<div className="weather-card glow-pop">
+  
+
    <div className='w-[23rem] min-w-[23rem] h-[33rem] glassCard p-5 rounded-xl shadow-xl flex flex-col justify-between'>
 
       <div className='flex flex-col items-center gap-4 mt-4'>
@@ -98,7 +100,7 @@ const WeatherCard = ({
       <div className='text-center text-2xl font-semibold mt-3'>{conditions}</div>
     </div>
 
-  )
+ </div> )
 }
 
 export default WeatherCard;

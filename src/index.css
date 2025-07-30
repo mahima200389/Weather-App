@@ -16,3 +16,48 @@
   border-radius: 10px;
   border: 1px solid rgba(225,225,225,0.18);
 }
+
+
+/* index.css */
+
+/* Smooth glow pop effect for WeatherCard */
+.glow-pop {
+  animation: glowPop 0.6s ease-in-out;
+  border: 2px solid #4fc3f7;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #4fc3f7, 0 0 20px #4fc3f7;
+}
+
+/* Animation definition */
+@keyframes glowPop {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.95);
+    box-shadow: 0 0 0 transparent;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 10px #4fc3f7, 0 0 20px #4fc3f7;
+  }
+}
+
+/* Optional: Scrollbar styling for better UI */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Optional: Smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
+}
