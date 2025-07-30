@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import search from './assets/icons/search.svg'
 import { useStateContext } from './Context'
-import { WeatherCard, MiniCard, BackgroundLayout } from './components'
+import { WeatherCard, MiniCard, BackgroundLayout } from './Components'
 function App() {
 
   const [input, setInput] = useState('')
